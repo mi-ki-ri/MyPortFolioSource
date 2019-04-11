@@ -23,9 +23,10 @@ title: "作者について"
 ### 持っているスキルを教えて
 
 - PHP, 特にWordPressでのサイト制作
-- JavaScript, Vue.jsを利用したWebサイト制作
+- JavaScript, Vue.js, Nuxt.jsを利用したWebサイト制作
 - AWSの管理
-- Alexa Skill Kitの使用
+- (一応)Alexa Skill Kitの使用
+- (一応)React Native
 
 ### 今後の目標は？
 
