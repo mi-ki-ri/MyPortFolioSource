@@ -20,7 +20,7 @@ jobs:
 
       - run: 
         command: ls
-        working_directory: ./chk
+        working_directory: ./
 
       # theme
       - run: 
