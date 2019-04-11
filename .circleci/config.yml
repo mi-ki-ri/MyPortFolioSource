@@ -51,6 +51,10 @@ jobs:
               
 
               cp -fr ../chk/. ../MyPortfolio/content
+
+              ls
+              ls ./content
+
               mkdir themes
               mkdir themes/MyPortfolioTheme
               cp -fr ../themes/MyPortfolioTheme/. ../MyPortfolio/themes/MyPortfolioTheme
