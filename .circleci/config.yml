@@ -51,7 +51,7 @@ jobs:
               cp -fr ../chk ../MyPortfolio/content
               mkdir themes
               mkdir themes/MyPortfolioTheme
-              cp -fr ../themes/MyPortfolioTheme/. ../TIL/themes/MyPortfolioTheme
+              cp -fr ../themes/MyPortfolioTheme/. ../MyPortfolio/themes/MyPortfolioTheme
 
               #cp -f themes/even/exampleSite/config.toml ../TIL/.
               # git submodule add https://github.com/siegerts/hugo-theme-basic.git themes/hugo-theme-basic
