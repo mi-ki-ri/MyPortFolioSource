@@ -66,8 +66,8 @@ jobs:
 
               hugo
 
-              cp -fr ./docs/. ../tmp
-              cp -fr ../tmp/. ../MyPortfolioTheme
+              cp -fr ./public/. ../tmp
+              cp -fr ../tmp/. ./docs
               
               ls
               ls themes
