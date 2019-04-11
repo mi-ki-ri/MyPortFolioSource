@@ -27,6 +27,7 @@ title: "作者について"
 - AWSの管理
 - (一応)Alexa Skill Kitの使用
 - (一応)React Native
+- (一応)FirebaseのRealTimeDB
 
 ### 今後の目標は？
 
