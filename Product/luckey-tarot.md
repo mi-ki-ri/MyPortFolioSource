@@ -1,6 +1,6 @@
-+++
-title= "LuckyTarot"
-+++
+---
+title: "LuckyTarot"
+---
 
 ### これって何？
 
