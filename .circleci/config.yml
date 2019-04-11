@@ -20,6 +20,8 @@ jobs:
 
       - run: ls
 
+      - run: ls ./chk
+
       # theme
       - run: 
           command: git clone https://github.com/mi-ki-ri/MyPortfolioTheme.git MyPortfolioTheme
