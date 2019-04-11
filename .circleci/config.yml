@@ -68,7 +68,7 @@ jobs:
               hugo
 
               cp -fr ./public/. ../tmp
-              cp -fr ../tmp/. ../TIL
+              cp -fr ../tmp/. ../MyPortfolioTheme
               
               ls
               ls themes
