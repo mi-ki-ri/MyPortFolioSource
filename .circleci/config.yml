@@ -18,9 +18,7 @@ jobs:
       - checkout: 
           path: chk
 
-      - run: 
-        command: ls
-        working_directory: ./
+      - run: ls
 
       # theme
       - run: 
