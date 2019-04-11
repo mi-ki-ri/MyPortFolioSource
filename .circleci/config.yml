@@ -18,6 +18,10 @@ jobs:
       - checkout: 
           path: chk
 
+      - run: 
+        command: ls
+        working_directory: chk
+
       # theme
       - run: 
           command: git clone https://github.com/mi-ki-ri/MyPortfolioTheme.git MyPortfolioTheme
@@ -58,7 +62,7 @@ jobs:
 
 
               
-              echo 'BaseURL = "https://mi-ki-ri.github.io/TIL-Web/"' >> config.toml
+              echo 'BaseURL = "https://mi-ki-ri.github.io/MyPortfolio/"' >> config.toml
               echo 'theme = "MyPortfolioTheme"' >> config.toml
               echo 'title = "HOTTA Tatsuyas Portfolio"' >> config.toml
 
