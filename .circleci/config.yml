@@ -24,7 +24,7 @@ jobs:
           working_directory: themes
       
       # hugoでTIL作る
-      - run: hugo new site TIL
+      - run: hugo new site MyPortfolio
       
 
       # ビルドしてユーザページサイトにPushする
@@ -48,7 +48,7 @@ jobs:
               
               
 
-              cp -fr ../chk ../TIL/content
+              cp -fr ../chk ../MyPortfolio/content
               mkdir themes
               mkdir themes/MyPortfolioTheme
               cp -fr ../themes/MyPortfolioTheme/. ../TIL/themes/MyPortfolioTheme
@@ -59,7 +59,7 @@ jobs:
 
               
               echo 'BaseURL = "https://mi-ki-ri.github.io/TIL-Web/"' >> config.toml
-              echo 'Title = "TIL - Web"' >> config.toml
+              echo 'Title = "HOTTA Tatsuya's Web Portfolio"' >> config.toml
               echo 'theme = "MyPortfolioTheme"' >> config.toml
 
               cat config.toml
@@ -78,4 +78,4 @@ jobs:
               git commit -m "CircleCI"
 
               git push -u origin master
-          working_directory: TIL
+          working_directory: MyPortfolio
