@@ -39,7 +39,7 @@ jobs:
 
 
 
-              git remote add origin https://github.com/mi-ki-ri/TIL-Web.git
+              git remote add origin https://github.com/mi-ki-ri/MyPortfolio.git
               #git add .
               #git commit -m "CircleCI"
               git pull origin master --allow-unrelated-histories --no-edit
