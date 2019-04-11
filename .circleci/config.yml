@@ -69,6 +69,7 @@ jobs:
               echo 'BaseURL = "https://mi-ki-ri.github.io/MyPortfolio/"' >> config.toml
               echo 'theme = "MyPortfolioTheme"' >> config.toml
               echo 'title = "HOTTA Tatsuyas Portfolio"' >> config.toml
+              echo 'summaryLength = 75' >> config.toml
 
               cat config.toml
 
