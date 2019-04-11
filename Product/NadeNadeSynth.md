@@ -1,6 +1,7 @@
-+++
+---
 title= "NadeNadeSynth"
-+++
+---
+
 
 URL: [https://nadenadesynth.herokuapp.com/](https://nadenadesynth.herokuapp.com/)
 
