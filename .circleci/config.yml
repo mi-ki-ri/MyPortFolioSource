@@ -79,8 +79,11 @@ jobs:
               cp -fr ../tmp/. ./docs
               
               ls
+              
               ls themes
               
+              echo 'Github-pages [https://mi-ki-ri.github.io/MyPortfolio/](https://mi-ki-ri.github.io/MyPortfolio/)' >> readme.md
+
 
               git add .
               git commit -m "CircleCI"
