@@ -1,6 +1,6 @@
-+++
-title= "MyTab.js"
-+++
+---
+title: "MyTab.js"
+---
 
 ### これって何？
 
