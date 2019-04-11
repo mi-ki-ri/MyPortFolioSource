@@ -1,6 +1,6 @@
-+++
-title = "MyPortfolio"
-+++
+---
+title : "MyPortfolio"
+---
 
 
 このページとこのページを動かしている仕組み全体のこと。
