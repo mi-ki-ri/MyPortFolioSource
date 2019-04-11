@@ -50,7 +50,7 @@ jobs:
               
               
 
-              cp -fr ../chk ../MyPortfolio/content
+              cp -fr ../chk/. ../MyPortfolio/content
               mkdir themes
               mkdir themes/MyPortfolioTheme
               cp -fr ../themes/MyPortfolioTheme/. ../MyPortfolio/themes/MyPortfolioTheme
