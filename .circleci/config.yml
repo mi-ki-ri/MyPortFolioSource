@@ -1,0 +1,81 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:latest
+    branches:
+        only:
+          - master
+    steps:
+
+
+
+      # git get
+      - run: apk update && apk add git
+      
+      # blogリポジトリのデータを取得する
+      - run: mkdir chk
+      - checkout: 
+          path: chk
+
+      # theme
+      - run: 
+          command: git clone https://github.com/mi-ki-ri/MyPortfolioTheme.git MyPortfolioTheme
+          working_directory: themes
+      
+      # hugoでTIL作る
+      - run: hugo new site TIL
+      
+
+      # ビルドしてユーザページサイトにPushする
+      - deploy:
+          command: |    
+              
+              git config --global user.email "mi.ki.ri.hassha.p@gmail.com"
+              git config --global user.name "mi-ki-ri"
+              git init
+              
+              rm -rf ./*
+
+
+
+              git remote add origin https://github.com/mi-ki-ri/TIL-Web.git
+              #git add .
+              #git commit -m "CircleCI"
+              git pull origin master --allow-unrelated-histories --no-edit
+              rm -rf ./*
+
+              
+              
+
+              cp -fr ../chk ../TIL/content
+              mkdir themes
+              mkdir themes/MyPortfolioTheme
+              cp -fr ../themes/MyPortfolioTheme/. ../TIL/themes/MyPortfolioTheme
+
+              #cp -f themes/even/exampleSite/config.toml ../TIL/.
+              # git submodule add https://github.com/siegerts/hugo-theme-basic.git themes/hugo-theme-basic
+
+
+              
+              echo 'BaseURL = "https://mi-ki-ri.github.io/TIL-Web/"' >> config.toml
+              echo 'Title = "TIL - Web"' >> config.toml
+              echo 'theme = "MyPortfolioTheme"' >> config.toml
+
+              cat config.toml
+
+
+              hugo
+
+              cp -fr ./public/. ../tmp
+              cp -fr ../tmp/. ../TIL
+              
+              ls
+              ls themes
+              
+
+              git add .
+              git commit -m "CircleCI"
+
+              git push -u origin master
+          working_directory: TIL
