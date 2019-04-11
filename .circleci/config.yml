@@ -60,7 +60,7 @@ jobs:
               
               echo 'BaseURL = "https://mi-ki-ri.github.io/TIL-Web/"' >> config.toml
               echo 'theme = "MyPortfolioTheme"' >> config.toml
-              echo 'title = "HOTTA Tatsuya&apos;s Portfolio"' >> config.toml
+              echo 'title = "HOTTA Tatsuyas Portfolio"' >> config.toml
 
               cat config.toml
 
